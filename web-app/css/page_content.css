@@ -1,0 +1,49 @@
+/* Page content Interior Div */
+
+.page_body {
+    min-height:21em;
+    height:100%;
+    background-color: #eee;
+    display: inline-block;
+}
+.page_content {
+	width:75%;
+	margin-left:5%;
+}
+
+/* NAVIGATION MENU */
+
+#navigation {
+	float:left;
+	background: #baddab;
+	width:15%;
+	border-right:.2em solid #baddab;
+}
+
+#navigation ul {
+	padding:1em 0 1em 0;
+	list-style: none;
+}
+
+#navigation .nav_option {
+    -moz-border-radius: 0.6em 0 0 0.6em ;
+    -webkit-border-radius:0.6em 0 0 0.6em;
+    border-radius:0.6em 0 0 0.6em ;
+    padding: .75em 0 .75em 0;
+    border-top:.1em solid #abddab;
+    text-align:center;
+    margin:auto;
+    width:100%;
+    background: #eee
+}
+
+#navigation .nav_option .last {
+	border-top:.1em solid #baddab;
+    
+}
+
+#navigation .nav_selection, #navigation .nav_option:hover, #navigation .nav_option:active {
+	border-right:.2em solid #543;
+    background: #543;
+    color: #baddab;
+}
