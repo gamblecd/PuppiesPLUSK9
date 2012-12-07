@@ -7,6 +7,8 @@
 *.pydevproject
 bin/
 tmp/
+target/
+target-eclipse/
 *.tmp
 *.bak
 *.swp
