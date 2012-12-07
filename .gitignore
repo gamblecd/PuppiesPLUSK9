@@ -2,6 +2,7 @@
 ## Eclipse
 #################
 
+*.link*
 *.class
 *.pydevproject
 bin/
