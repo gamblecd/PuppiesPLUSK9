@@ -20,10 +20,12 @@
 		<r:layoutResources />
 	</head>
 	<body>
-		<div id="header" role="banner"><a href="http://grails.org"><img src="${resource(dir: 'images', file: 'grails_logo.png')}" alt="Grails"/></a></div>
-		<g:pageProperty name="page.navigation" default=""/>
-		<g:layoutBody/>
-		<div class="footer" role="contentinfo"></div>
+		<g:pageProperty name="page.header" />
+		<div id="content">
+			<g:pageProperty name="page.navigation" default=""/>
+			<g:pageProperty name="page.content" />
+		</div>
+		<g:pageProperty name="page.footer" />
 		<g:javascript library="application"/>
 		<r:layoutResources />
 	</body>

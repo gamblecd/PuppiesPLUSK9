@@ -3,47 +3,64 @@
 .page_body {
     min-height:21em;
     height:100%;
-    background-color: #eee;
-    display: inline-block;
+  	display: inline-block;
 }
+
 .page_content {
-	width:75%;
-	margin-left:5%;
+	width:80%;
+	margin:1em;
+	padding:1em 0em 0em 0em;
 }
 
-/* NAVIGATION MENU */
 
-#navigation {
+
+/* WHAT I DO STYLE */
+.ido {
+	display:inline-block;
+	clear:both;
+	overflow:visible;
+	padding:.25em;
+}
+
+.ido img {margin-top:0;margin-bottom:0;}
+
+.ido p {
+	position:relative;
+	vertical-align:middle;
+	height:100%;
+	margin-top:2.5em;
+}
+
+/* END WHAT I DO STYLE */
+
+
+/* ABOUT ME STYLE */
+.aboutme p {
+	display:block; 
+}
+
+#content .aboutme img {
+	width:175px;
+	height:200px;
 	float:left;
-	background: #baddab;
-	width:15%;
-	border-right:.2em solid #baddab;
+	margin:0 1em 1em 0;
+	padding:0;
 }
 
-#navigation ul {
-	padding:1em 0 1em 0;
-	list-style: none;
-}
+/* END ABOUT ME STYLE */
 
-#navigation .nav_option {
-    -moz-border-radius: 0.6em 0 0 0.6em ;
-    -webkit-border-radius:0.6em 0 0 0.6em;
-    border-radius:0.6em 0 0 0.6em ;
-    padding: .75em 0 .75em 0;
-    border-top:.1em solid #abddab;
-    text-align:center;
-    margin:auto;
-    width:100%;
-    background: #eee
-}
+/* TESTIMONIAL STYLE */
 
-#navigation .nav_option .last {
-	border-top:.1em solid #baddab;
-    
-}
+.testimonial {margin-top:2em;}
 
-#navigation .nav_selection, #navigation .nav_option:hover, #navigation .nav_option:active {
-	border-right:.2em solid #543;
-    background: #543;
-    color: #baddab;
-}
+.testimonial .author {clear:both;}
+.testimonial .authorname {}
+.testimonial .authortitle {padding-left:1em;}
+
+.testimonial.left {text-align:left;}
+.testimonial.left .author {text-align:right;}
+
+.testimonial.right {text-align:right;}
+.testimonial.right .author {text-align:left;}
+
+/* END TESTIMONIAL STYLE */
