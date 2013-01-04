@@ -17,7 +17,7 @@ environments {
                 driverClassName = "org.postgresql.Driver"
                 dialect = org.hibernate.dialect.PostgreSQLDialect
     
-                uri = new URI(System.env.DATABASE_URL?:"postgres://test:test@localhost/test")
+                uri = new URI(System.env.DATABASE_URL?:"postgres://kfiwruukiqcqum:CpKtm5_vjBjSlM6xmLZkCuH9tS@ec2-54-243-241-130.compute-1.amazonaws.com:5432/d2nebkepkb5u3k")
 
                 url = "jdbc:postgresql://"+uri.host+uri.path
                 username = uri.userInfo.split(":")[0]
@@ -29,7 +29,7 @@ environments {
                 driverClassName = "org.postgresql.Driver"
                 dialect = org.hibernate.dialect.PostgreSQLDialect
     
-                uri = new URI(System.env.DATABASE_URL?:"postgres://test:test@localhost/test")
+                uri = new URI(System.env.DATABASE_URL?:"postgres://kfiwruukiqcqum:CpKtm5_vjBjSlM6xmLZkCuH9tS@ec2-54-243-241-130.compute-1.amazonaws.com:5432/d2nebkepkb5u3k")
 
                 url = "jdbc:postgresql://"+uri.host+uri.path
                 username = uri.userInfo.split(":")[0]
@@ -41,7 +41,7 @@ environments {
                 driverClassName = "org.postgresql.Driver"
                 dialect = org.hibernate.dialect.PostgreSQLDialect
     
-                uri = new URI(System.env.DATABASE_URL?:"postgres://test:test@localhost/test")
+                uri = new URI(System.env.DATABASE_URL?:"postgres://kfiwruukiqcqum:CpKtm5_vjBjSlM6xmLZkCuH9tS@ec2-54-243-241-130.compute-1.amazonaws.com:5432/d2nebkepkb5u3k")
 
                 url = "jdbc:postgresql://"+uri.host+uri.path
                 username = uri.userInfo.split(":")[0]
