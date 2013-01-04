@@ -17,7 +17,7 @@
     <title><g:layoutTitle /></title>
 	<content tag="header">
 		<div id="header" role="banner">
-			<a href="http://grails.org"><img src="${resource(dir: 'images', file: 'grails_logo.png')}" alt="Grails"/></a>
+			<a href="#"><img src="${resource(dir: 'images/logo', file: 'ppklogow640.png')}" alt="PuppiesPlusLogo" height='100px'/></a>
 			<div class="contact" >
 				<p>Marchele Gamble</p>
 				<p>Phone: 425.XXX.XXXX</p>

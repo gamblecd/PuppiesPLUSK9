@@ -1,8 +1,8 @@
 
 html {
 
-	background-image: url('../images/PPK9DemoLarge.jpg');
-    background-repeat: no-repeat;
+	background-image: url('../images/background/bkg.png');
+    background-repeat:repeat;
 }
 
 html * {
@@ -10,8 +10,7 @@ html * {
 }
 
 body {
-	width:50em;
-	overflow:scroll;
+	width:70em;
 }
 
 p {color: #baddab;}
@@ -23,11 +22,6 @@ p.oblique {font-style:oblique}
 #header {
 	width:100%;
 	display:inline-block;
-}
-
-#header a {
-	margin:0;
-	padding: 1em;
 }
 #header .contact {
 	float:right;
