@@ -3,12 +3,12 @@
 	    <div id="navigation" class="page_body transparent">
             <ul>
             <g:set var="highlighted" value="${pageProperty(name: 'page.highlighted')}"/>
-                <li id="navHome" class="nav_option"><a href="./index">Home</a></li>
-                <li id="navAbout" class="nav_option"><a href="./about">About Me</a></li>
-                <li id="navWhatIDo" class="nav_option"><a href="./whatIDo">What I Do</a></li>
-                <li id="navTestimonials" class="nav_option"><a href="./testimonials">Testimonials</a></li>
-                <li id="navEvents" class="nav_option"><a href="./events">Events</a></li>
-                <li id="navContact" class="nav_option last"><a href="./contact">Contact</a></li>
+                <li id="navHome" class="nav_option"><a href="/PuppiesPLUSK9/home/index">Home</a></li>
+                <li id="navAbout" class="nav_option"><a href="/PuppiesPLUSK9/home/about">About Me</a></li>
+                <li id="navWhatIDo" class="nav_option"><a href="/PuppiesPLUSK9/home/whatIDo">What I Do</a></li>
+                <li id="navTestimonials" class="nav_option"><a href="/PuppiesPLUSK9/home/testimonials">Testimonials</a></li>
+                <li id="navEvents" class="nav_option"><a href="/PuppiesPLUSK9/home/events">Events</a></li>
+                <li id="navContact" class="nav_option last"><a href="/PuppiesPLUSK9/home/contact">Contact</a></li>
                 <!-- Write GSP to highlight the id set by highlighted -->
             <% %>
             </ul>
