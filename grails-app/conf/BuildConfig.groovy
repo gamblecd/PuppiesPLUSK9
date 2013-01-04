@@ -12,7 +12,7 @@ grails.project.dependency.resolution = {
         // specify dependency exclusions here; for example, uncomment this to disable ehcache:
         // excludes 'ehcache'
     }
-    log "error" // log level of Ivy resolver, either 'error', 'warn', 'info', 'debug' or 'verbose'
+    log "warn" // log level of Ivy resolver, either 'error', 'warn', 'info', 'debug' or 'verbose'
     checksums true // Whether to verify checksums on resolve
 
     repositories {
@@ -54,6 +54,9 @@ grails.project.dependency.resolution = {
 
         compile ':cache:1.0.0'
         compile ':heroku:1.0.1'
+        compile ":webxml:1.4.1"
+        compile ":database-session:1.1.2"
+        
         compile ':cloud-support:1.0.8'
     }
 }
