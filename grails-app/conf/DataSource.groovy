@@ -44,9 +44,9 @@ environments {
     
                 uri = new URI(System.env.DATABASE_URL?:"postgres://kfiwruukiqcqum:CpKtm5_vjBjSlM6xmLZkCuH9tS@ec2-54-243-241-130.compute-1.amazonaws.com:5432/d2nebkepkb5u3k")
 
-                url = "jdbc:postgresql://ec2-54-243-241-130.compute-1.amazonaws.com:5432/d2nebkepkb5u3k?user=kfiwruukiqcqum&password=CpKtm5_vjBjSlM6xmLZkCuH9tS&ssl=true"
-                username = uri.userInfo.split(":")[0]
-                password = uri.userInfo.split(":")[1]
+                url = "jdbc:postgresql://ec2-54-243-241-130.compute-1.amazonaws.com:5432/d2nebkepkb5u3k"
+                username = "kfiwruukiqcqum"
+                password = "CpKtm5_vjBjSlM6xmLZkCuH9tS"
 
         }
     }
