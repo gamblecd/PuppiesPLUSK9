@@ -36,6 +36,7 @@ grails.project.dependency.resolution = {
 
         // runtime 'mysql:mysql-connector-java:5.1.200'
         runtime 'postgresql:postgresql:8.4-702.jdbc3'
+        
     }
 
     plugins {
@@ -56,6 +57,7 @@ grails.project.dependency.resolution = {
         compile ':heroku:1.0.1'
         compile ":webxml:1.4.1"
         compile ":database-session:1.1.2"
+        compile ":jetty:2.0.1"
         
         compile ':cloud-support:1.0.8'
     }
