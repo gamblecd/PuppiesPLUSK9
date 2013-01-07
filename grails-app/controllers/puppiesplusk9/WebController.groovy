@@ -1,6 +1,6 @@
 package puppiesplusk9
 
-class HomeController {
+class WebController {
     
     def demo() {
         render(view: "demo.gsp")

@@ -6,12 +6,15 @@
   	display: inline-block;
 }
 
+.page_body p {
+	margin-bottom: 1em
+}
+
 .page_content {
 	width:80%;
 	margin:1em;
 	padding:1em 0em 0em 0em;
 }
-
 
 
 /* WHAT I DO STYLE */
