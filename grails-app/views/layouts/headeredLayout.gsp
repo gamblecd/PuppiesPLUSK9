@@ -20,7 +20,7 @@
 			<a href="#"><img src="${resource(dir: 'images/logo', file: 'ppklogow640.png')}" alt="PuppiesPlusLogo" height='100px'/></a>
 			<div class="contact" >
 				<p>Marchele Gamble</p>
-				<p>425.239.5974</p>
+				<p>425.418.6131</p>
 				<p>marchele@puppiesplusk9.com</p>
 			</div>
 			<h1 class="pagetitle"><g:pageProperty name="page.pagetitle" /></h1>

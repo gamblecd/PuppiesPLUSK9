@@ -16,6 +16,21 @@
 	padding:1em 0em 0em 0em;
 }
 
+.titledSection {
+	padding: 1em;
+}
+
+.titledSection .title {
+	font-style:italic;
+	color: #98bb89;
+	font:bolder;
+    margin-bottom: 1em;
+}
+
+.titledSection .sectionbody {
+	position:relative;
+	margin-left: 3em;
+}
 
 /* WHAT I DO STYLE */
 .ido {
@@ -55,6 +70,7 @@
 /* TESTIMONIAL STYLE */
 
 .testimonial {margin-top:2em;}
+.testimonial p {margin:0;}
 
 .testimonial .author {clear:both;}
 .testimonial .authorname {}
