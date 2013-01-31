@@ -10,9 +10,13 @@
 
 <body>
   <div class="aboutme">
-  	<img />
-  	<p>This is the About Me page!</p>
-  	<p>COMING SOON!</p>
+  	<img src="${resource(dir: 'images/pages/about', file: 'about1.jpg')}" alt="About Me"/>
+  	<p>I was born and raised in Snohomish County. I have had a lifelong passion with dogs and have been actively
+working with them for over 10 years. Over this time I have learned different training techniques and
+became certified in Canine Behavior and Training. I am always expanding my knowledge with continuing
+education. I currently train and show my own dogs in companion events. I have been a volunteer for the
+Snohomish County 4-H Dog program since 1999 and beginning in 2004, I have been the Superintendent of
+the Dog Show at the Stanwood Camano Community Fair.</p>
   </div>
 </body>
 </html>

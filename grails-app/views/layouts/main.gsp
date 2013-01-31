@@ -16,7 +16,7 @@
 		<link rel="stylesheet" href="${resource(dir: 'css', file: 'mobile.css')}" type="text/css">
 		<link rel="stylesheet" href="${resource(dir: 'css', file: 'page_main.css')}" type="text/css">
 		<link rel="stylesheet" href="${resource(dir: 'css', file: 'page_content.css')}" type="text/css">
-		<g:layoutHead/>
+        <g:layoutHead/>
 		<r:layoutResources />
 	</head>
 	<body>
