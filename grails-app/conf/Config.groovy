@@ -79,7 +79,7 @@ environments {
     }
     production {
         grails.logging.jul.usebridge = false
-        grails.serverURL = "http://www.puppiesplus.com"
+        //grails.serverURL = "http://www.puppiesplus.com"
         grails {
             mail {
                 host = "smtpout.secureserver.net"
