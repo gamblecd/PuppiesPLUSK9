@@ -69,7 +69,7 @@ environments {
                 host = "smtpout.secureserver.net"
                  port = 465
                  username = "noreply@puppiesplusk9.com"
-                 password = ""
+                 password = System.getenv("mail_pass")
                  props = ["mail.smtp.auth":"true",
                           "mail.smtp.socketFactory.port":"465",
                           "mail.smtp.socketFactory.class":"javax.net.ssl.SSLSocketFactory",
@@ -85,7 +85,7 @@ environments {
                 host = "smtpout.secureserver.net"
                  port = 465
                  username = "noreply@puppiesplusk9.com"
-                 password = ""
+                 password = System.getenv("mail_pass")
                  props = ["mail.smtp.auth":"true",
                           "mail.smtp.socketFactory.port":"465",
                           "mail.smtp.socketFactory.class":"javax.net.ssl.SSLSocketFactory",
