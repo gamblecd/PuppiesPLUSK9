@@ -147,20 +147,46 @@
 .contact p {margin-bottom:0;}
 
 .contact_info {
+	float:left;
 	width:40%;
     display:inline-block;
     
 }
 
 .contact_email_form {
+    float:right;
     display:block;
-	height:150%;
-    width:50%;
-    margin:0px;
+    height:150%;
+    width:59%;
+    
     border-style:solid;
     border-width:0 0 0 2px;
     border-color:#baddab;
-    padding:1em;
+    
 }
 
+.form_title {
+    font-size: 32px;
+    font-weight: bold;
+	
+	}
+
+.contact_email_form p {
+    width:100%;
+}
+
+.contact_email_form p textarea {
+    width:80%;
+}
+
+.contact_email_form p label {
+	width: 4em;
+	float: left;
+	text-align: right;
+	margin-right: 0.5em;
+    }
+
+.contact_email_form .form_submit {
+	text-align:center;
+}
 /* END CONTACT INFORMATION STYLE */

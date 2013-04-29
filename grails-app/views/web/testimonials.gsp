@@ -10,6 +10,8 @@
 
 <body>
   <div class="body">
+    <p> Coming Soon!!!</p>
+    <!-- 
   	<div class="testimonial left">
   		<p>"Curabitur laoreet tellus at tellus volutpat consequat. In nec purus tortor, ut volutpat purus. Morbi arcu nisl, porttitor eu ullamcorper vel, pellentesque ac lorem. Sed facilisis dignissim nibh, vel consectetur nisl tincidunt at. Phasellus rhoncus sagittis orci non dictum. Suspendisse velit tortor, dignissim ut ornare ut, sagittis sit amet orci. Cras porta luctus velit ac condimentum."</p>
   		<br />
@@ -34,6 +36,7 @@
   			<p class="authortitle italic">Author Title</p>
 		</div>
   	</div>
+  	-->
   </div>
 </body>
 </html>

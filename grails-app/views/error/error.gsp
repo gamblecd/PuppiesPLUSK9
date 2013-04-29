@@ -10,8 +10,8 @@
 
 <g:applyLayout name="headeredLayout">  
 <content tag="pagetitle">Uh Oh!</content>
-   <h1>Error: 404</h1>
-   <p>Page Not Found</p>
+   <h1>Error: ${ code }</h1>
+   <p>${ message }</p>
 </g:applyLayout>
 </body>
 </html>

@@ -13,7 +13,7 @@
 		<div class="ido">
 			<img class="left" src="${resource(dir: 'images/pages/whatIDo', file: 'whatIDo1.jpg')}" alt="First Description Paragraph"/>
 			<p class="text">Puppies PLUS K9 Training will provide personalized service and
-				high quality training to dog owners and teach them different
+				high quality training to dog owners and teach them different 
 				training techniques. This will allow dog owners to have well behaved
 				pets and address behavior issues before they become a problem.</p>
 		</div>

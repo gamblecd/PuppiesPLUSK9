@@ -13,7 +13,7 @@ body {
 	width:70em;
 }
 
-p, h1,h2,h3,h4,h5 {color: #baddab;}
+p, h1,h2,h3,h4,h5,legend {color: #baddab;}
 
 p.normal {font-style:normal}
 p.italic {font-style:italic}

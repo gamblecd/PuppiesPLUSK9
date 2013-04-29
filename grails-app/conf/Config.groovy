@@ -63,10 +63,36 @@ environments {
     development {
         grails.logging.jul.usebridge = true
         grails.resources.processing.enabled = true;
+        
+        grails {
+            mail {
+                host = "smtpout.secureserver.net"
+                 port = 465
+                 username = "noreply@puppiesplusk9.com"
+                 password = ""
+                 props = ["mail.smtp.auth":"true",
+                          "mail.smtp.socketFactory.port":"465",
+                          "mail.smtp.socketFactory.class":"javax.net.ssl.SSLSocketFactory",
+                          "mail.smtp.socketFactory.fallback":"false"]
+              }
+        }
     }
     production {
         grails.logging.jul.usebridge = false
-        //grails.serverURL = "http://www.puppiesplus.com"
+        grails.serverURL = "http://www.puppiesplus.com"
+        grails {
+            mail {
+                host = "smtpout.secureserver.net"
+                 port = 465
+                 username = "noreply@puppiesplusk9.com"
+                 password = ""
+                 props = ["mail.smtp.auth":"true",
+                          "mail.smtp.socketFactory.port":"465",
+                          "mail.smtp.socketFactory.class":"javax.net.ssl.SSLSocketFactory",
+                          "mail.smtp.socketFactory.fallback":"false"]
+              }
+            
+        }
     }
 }
 

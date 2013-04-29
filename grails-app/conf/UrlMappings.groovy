@@ -16,9 +16,9 @@ class UrlMappings {
 		}
         
         "403"(controller:"error", action:"forbidden")
-        "404"(controller:"error", action:"notFound")
+        "404"(controller:"error", action:"pageNotFound", view:"error.gsp");
         
-        "500"(controller: "error", action:"serverError")
+        "500"(controller:"error", action:"serverError", exception:MessagingException)
         "503"(controller:"error", action:"serverError")
 	}
 }
