@@ -1,19 +1,23 @@
 package puppiesplusk9.email;
 
-public class InquiryEmail extends AbstractEmail {
+public class InquiryEmail extends EmailImpl {
    
     
-    public InquiryEmail(name, email, subject, body) {
-        super(name, INTERNAL_ADDRESSES, subject, body);
-        this.fromAddress = NO_REPLY_ADDRESS;
-        this.body= this.body + "\n\nREPLY TO: " + this.fromAddress;
-    }
+    protected InquiryEmail() {}
     
-    protected String buildSubject(name, subject) {
-        return "New Inquiry From Website -> " + name + ": " + subject;
+	@Override
+	protected Email buildTo(String[] addresses) {
+		return super.buildTo(INTERNAL_ADDRESSES);
+	}
+	
+	@Override
+    protected Email buildSubject(name, subject) {
+        return super.buildSubject("New Inquiry From Website -> " + name + ": " + subject)
     }
-    
-    protected String buildBody(body) {
-        return body;
-    }
+	
+	@Override
+	protected Email buildBody(String body) {
+		return super.buildBody(body + "\n\nREPLY TO: " + this.fromAddress); 
+	}
+
 }

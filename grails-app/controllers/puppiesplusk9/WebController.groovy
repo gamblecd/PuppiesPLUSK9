@@ -1,8 +1,5 @@
 package puppiesplusk9
 
-
-import javax.mail.MessagingException
-
 import puppiesplusk9.email.EmailController
 
 class WebController {

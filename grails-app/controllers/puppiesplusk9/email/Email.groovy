@@ -8,5 +8,10 @@ public interface Email {
     public String fromAddress;
 
     public String[] toAddresses;
+	
+	public String getBody();
+	public String getSubject();
+	public String getFrom();
+	public String[] getTo();
 }
 

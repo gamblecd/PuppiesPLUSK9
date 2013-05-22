@@ -15,11 +15,13 @@ public class EmailController {
     }
     
     public void performInquiryAction(address, subject, body) {
-        sendEmail(new InquiryEmail(sender, address, subject, body));
-        sendEmail(new InquiryCopyEmail(sender, address, subject, body));
+		String[] addresses = new String[1];
+		addresses[0] = address;
+        sendEmail(EmailImpl.Builder.buildInquiry(addresses, address, subject, body));
+        sendEmail(EmailImpl.Builder.buildInquiryCopy(addresses, "", subject, body));
     }
 
-    private sendEmail(AbstractEmail mail) {
+    private sendEmail(Email mail) {
         sendMail {
             from mail.fromAddress
             to mail.toAddresses
