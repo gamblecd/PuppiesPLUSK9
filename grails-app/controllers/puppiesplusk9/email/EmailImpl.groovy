@@ -37,7 +37,7 @@ protected class EmailImpl implements Email {
 	}
     
 	protected Email build(String[] toAddresses, String fromAddress, String subject, String body) {
-		return buildTo(toAddresses).buildFrom(fromAddress).buildSubject(subject).buildBody();
+		return buildTo(toAddresses).buildFrom(fromAddress).buildSubject(subject).buildBody(body);
 	}
 	
 	protected Email buildBody(String body) {
