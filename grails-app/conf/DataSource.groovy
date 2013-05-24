@@ -32,8 +32,8 @@ environments {
                 driverClassName = "org.postgresql.Driver"
                 dialect = org.hibernate.dialect.PostgreSQLDialect
                 dbScheme="postgres"
-                dbHost=System.env.get("db_host");
-                dbPort=System.env.get("db_port");
+                dbHost=System.env.get("db_host").toString();
+                dbPort=System.env.get("db_port").toString();
                 dbUserInfo=System.env.get("db_user")+ ":" + System.env.get("db_pass");
      
                 
