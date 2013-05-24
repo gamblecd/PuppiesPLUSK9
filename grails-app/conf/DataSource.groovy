@@ -32,16 +32,16 @@ environments {
                 driverClassName = "org.postgresql.Driver"
                 dialect = org.hibernate.dialect.PostgreSQLDialect
                 dbScheme="postgres"
-                dbHost=System.env.get("db_host").toString();
-                dbPort=System.env.get("db_port").toString();
-                dbUserInfo=System.env.get("db_user")+ ":" + System.env.get("db_pass");
+                dbHost=System.getenv("db_host").toString();
+                dbPort=System.getenv().get("db_port").toString();
+                dbUserInfo=System.properties.get("db_user")+ ":" + System.env.get("db_pass");
      
                 
-                uri = new URI(dbScheme, dbUserInfo, dbHost, dbPort);
-                //uri = new URI(System.env.DATABASE_URL?:"postgres://postgres:postgres@127.0.0.1:5432/test")
+                //uri = new URI(dbScheme, dbUserInfo, dbHost, dbPort);
+                uri = new URI(System.env.DATABASE_URL?:"postgres://postgres:postgres@127.0.0.1:5432/test")
                 url = "jdbc:postgresql://"+uri.host+uri.path
-                username = dbUserInfo(":")[0]
-                password = dbUserInfo(":")[1]
+                username = uri.userInfo.split(":")[0]
+                password = uri.userInfo.split(":")[1]
         }
     }
 }
