@@ -55,11 +55,13 @@ grails.project.dependency.resolution = {
         runtime ":database-migration:1.1"
 
         compile ':cache:1.0.0'
-        compile ':heroku:1.0.1'
+        
         compile ":webxml:1.4.1"
         compile ":database-session:1.1.2"
         compile ":jetty:2.0.3"
-        
-        compile ':cloud-support:1.0.8'
+		
+		// Heroku
+		compile ':heroku:1.0.1'
+		compile ':cloud-support:1.0.8'
     }
 }
