@@ -13,5 +13,6 @@ public interface Email {
 	public String getSubject();
 	public String getFrom();
 	public String[] getTo();
+
 }
 

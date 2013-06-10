@@ -3,12 +3,14 @@
 	    <div id="navigation" class="page_body transparent">
             <ul>
             <g:set var="highlighted" value="${pageProperty(name: 'page.highlighted')}"/>
-                <li id="navHome" class="nav_option"><g:link controller="web" action="index">Home</g:link></li>
-                <li id="navAbout" class="nav_option"><g:link controller="web" action="about">About Me</g:link></li>
-                <li id="navWhatIDo" class="nav_option"><g:link controller="web" action="whatIDo">What I Do</g:link></li>
-                <li id="navTestimonials" class="nav_option"><g:link controller="web" action="testimonials">Testimonials</g:link></li>
-                <li id="navEvents" class="nav_option"><g:link controller="web" action="events">Events</g:link></li>
-                <li id="navContact" class="nav_option last"><g:link controller="web" action="contact">Contact</g:link></li>
+                <li id="nav-Home" class="nav_option"><g:link controller="web" action="index">Home</g:link></li>
+                <li id="nav-About" class="nav_option"><g:link controller="web" action="about">About Me</g:link></li>
+                <li id="nav-WhatIDo" class="nav_option"><g:link controller="web" action="whatIDo">What I Do</g:link></li>
+                <g:if env="development">
+                	<li id="nav-Testimonials" class="nav_option"><g:link controller="web" action="testimonials">Testimonials</g:link></li>
+                	<li id="nav-Events" class="nav_option"><g:link controller="web" action="events">Upcoming Events</g:link></li>
+                </g:if>
+                <li id="nav-Contact" class="nav_option last"><g:link controller="web" action="contact">Contact</g:link></li>
                 <!-- Write GSP to highlight the id set by highlighted -->
             <% %>
             </ul>

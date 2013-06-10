@@ -66,7 +66,7 @@ environments {
         
         grails {
             mail {
-                host = "smtpout.secureserver.net"
+                host = "smtp.gmail.com"
                  port = 465
                  username = "noreply@puppiesplusk9.com"
                  password = System.getenv("mail_pass")
@@ -82,7 +82,7 @@ environments {
         //grails.serverURL = "http://www.puppiesplus.com"
         grails {
             mail {
-                host = "smtpout.secureserver.net"
+                host = "smtp.gmail.com"
                  port = 465
                  username = "noreply@puppiesplusk9.com"
                  password = System.getenv("mail_pass")

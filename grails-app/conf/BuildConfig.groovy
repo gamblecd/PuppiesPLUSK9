@@ -60,6 +60,9 @@ grails.project.dependency.resolution = {
         compile ":database-session:1.1.2"
         compile ":jetty:2.0.3"
 		
+		// Google Calendar
+		runtime ":oauth:2.1.0"
+		
 		// Heroku
 		compile ':heroku:1.0.1'
 		compile ':cloud-support:1.0.8'
