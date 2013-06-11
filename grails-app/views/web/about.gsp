@@ -16,8 +16,7 @@
 			lifelong passion for dogs and have been actively working with them
 			for over 10 years. Over this time I have learned different training
 			techniques and became certified in Canine Behavior and Training. I am
-			always expanding my knowledge with continuing education. I currently
-			train and show my own dogs in companion events. I have been a
+			always expanding my knowledge with continuing education. I have been a
 			volunteer for the Snohomish County 4-H Dog program since 1999 and
 			beginning in 2004, I have been the Superintendent of the Dog Show at
 			the Stanwood Camano Community Fair.</p>
