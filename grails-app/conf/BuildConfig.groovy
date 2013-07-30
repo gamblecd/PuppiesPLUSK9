@@ -26,10 +26,11 @@ grails.project.dependency.resolution = {
         mavenCentral()
 
         // uncomment these (or add new ones) to enable remote dependency resolution from public Maven repositories
-        mavenRepo "http://snapshots.repository.codehaus.org"
         mavenRepo "http://repository.codehaus.org"
         mavenRepo "http://download.java.net/maven/2/"
-        mavenRepo "http://repository.jboss.com/maven2/"
+        mavenRepo "http://repo.desirableobjects.co.uk/"
+		mavenRepo "http://repository.jboss.com/maven2/"
+		mavenRepo "http://snapshots.repository.codehaus.org"
 		mavenRepo "http://repository.ow2.org/nexus/content/repositories/public"
 		
     }
@@ -38,6 +39,8 @@ grails.project.dependency.resolution = {
 
         // runtime 'mysql:mysql-connector-java:5.1.200'
         runtime 'postgresql:postgresql:9.1-901-1.jdbc4'
+		compile 'com.google.api-client:google-api-client:1.15.0-rc'
+		
     }
 
     plugins {
@@ -59,9 +62,10 @@ grails.project.dependency.resolution = {
         compile ":webxml:1.4.1"
         compile ":database-session:1.1.2"
         compile ":jetty:2.0.3"
+		compile ":newrelic:1.0-2.18.0"
 		
 		// Google Calendar
-		runtime ":oauth:2.1.0"
+		compile ":oauth:2.1.0"
 		
 		// Heroku
 		compile ':heroku:1.0.1'
