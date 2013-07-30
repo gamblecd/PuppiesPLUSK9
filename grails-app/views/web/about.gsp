@@ -10,7 +10,7 @@
 
 <body>
 	<div class="aboutme">
-		<img src="${resource(dir: 'images/pages/about', file: 'about1.jpg')}"
+		<img src="${resource(dir: 'images/pages/about', file: 'about1.png')}"
 			alt="About Me" />
 		<p>I was born and raised in Snohomish County. I have had a
 			lifelong passion for dogs and have been actively working with them

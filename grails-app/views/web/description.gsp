@@ -12,7 +12,7 @@
 	<div class="body">
 		<div class="ido">
 			<img class="left"
-				src="${resource(dir: 'images/pages/whatIDo', file: 'whatIDo1.jpg')}"
+				src="${resource(dir: 'images/pages/whatIDo', file: 'whatIDo1.png')}"
 				alt="First Description Paragraph" />
 			<p class="text">I provide personalized service and high quality
 				training to dog owners and teach them different training techniques.
@@ -21,7 +21,7 @@
 		</div>
 		<div class="ido">
 			<img class="right"
-				src="${resource(dir: 'images/pages/whatIDo', file: 'whatIDo2.jpg')}"
+				src="${resource(dir: 'images/pages/whatIDo', file: 'whatIDo2.png')}"
 				alt="Second Description Paragraph" />
 			<p class="text">My focus is early puppy training, socialization
 				and to help new rescue dogs transition into their forever homes. I
@@ -33,7 +33,7 @@
 		</div>
 		<div class="ido">
 			<img class="left"
-				src="${resource(dir: 'images/pages/whatIDo', file: 'whatIDo3.jpg')}"
+				src="${resource(dir: 'images/pages/whatIDo', file: 'whatIDo3.png')}"
 				alt="Third Description Paragraph" />
 			<div class="text">
 				<p>Puppies PLUS K9 Training can also help with training for:</p>

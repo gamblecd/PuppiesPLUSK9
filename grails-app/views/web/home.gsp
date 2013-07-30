@@ -10,7 +10,7 @@
 
 <body class="body">
 	<div class="pageEmphasis">
-		<img class="imgEmphasis" src="${resource(dir: 'images/pages/home', file: 'home.jpg')}" alt="Home"/>
+		<img class="imgEmphasis" src="${resource(dir: 'images/pages/home', file: 'home.png')}" alt="Home"/>
 		<h3 class="textEmphasis">“Teaching puppies and parents”</h3>
 	</div>
 	<section class="titledSection">
