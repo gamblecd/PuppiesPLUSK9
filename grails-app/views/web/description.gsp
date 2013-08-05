@@ -10,7 +10,7 @@
 
 <body>
 	<div class="body">
-		<div class="ido">
+		<section class="ido">
 			<img class="left"
 				src="${resource(dir: 'images/pages/whatIDo', file: 'whatIDo1.png')}"
 				alt="First Description Paragraph" />
@@ -18,8 +18,9 @@
 				training to dog owners and teach them different training techniques.
 				My goal is to train dogs and their owners to maintain well-behaved
 				pets and address behavior issues before they can become a problem.</p>
-		</div>
-		<div class="ido">
+			<div class="clearfill"></div>
+		</section>
+		<section class="ido">
 			<img class="right"
 				src="${resource(dir: 'images/pages/whatIDo', file: 'whatIDo2.png')}"
 				alt="Second Description Paragraph" />
@@ -30,8 +31,9 @@
 				puppy parents with the training and tools to teach their puppies
 				good behavior and provide professional breeders with a resource for
 				their new puppy parents.</p>
-		</div>
-		<div class="ido">
+			<div class="clearfill"></div>
+		</section>
+		<section class="ido">
 			<img class="left"
 				src="${resource(dir: 'images/pages/whatIDo', file: 'whatIDo3.png')}"
 				alt="Third Description Paragraph" />
@@ -40,7 +42,8 @@
 				<p>Obedience Trials, Rally Obedience Trials, AKC CGC (Canine
 					Good Citizen) Testing</p>
 			</div>
-		</div>
+			<div class="clearfill"></div>
+		</section>
 
 	</div>
 </body>
