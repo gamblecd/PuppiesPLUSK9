@@ -1,25 +1,27 @@
 package puppiesplusk9
 
-import org.springframework.aop.aspectj.RuntimeTestWalker.ThisInstanceOfResidueTestVisitor;
+import puppiesplusk9.exception.ServerException
 
 class ErrorController {
 
     def index() { }
     
-    def error(int code, String message) {
-        return [code:code, controller: "error", view: "error.gsp", message:message ];
+    def error(int errCode, String errMessage) {
+		render(controller:"error", view: "error.gsp", 
+			model:[code:errCode, message:errMessage]);
     }
-
+	
+	def serveError(ServerException err) {
+		error(err.errorCode, err.serverMessage);
+	}
+	
     def pageNotFound() {
-        def code = 404;
-        def message = "Page Not Found.";
-        render(code:code, controller: "error", view: "error.gsp", message:message);
+		serveError(ServerException.NOT_FOUND);
+		
     }
     
     def serverError() {
-        def code = 500;
-        def message = "An internal server error has occurred. We are sorry for the inconvenience.";
-        return [code:code, controller: "error", view: "error.gsp", message:message ];
+		serveError(ServerException.SERVER_ERROR);
     }
     
 }

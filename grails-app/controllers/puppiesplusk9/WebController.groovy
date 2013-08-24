@@ -17,7 +17,7 @@ class WebController {
 	
     def testimonials() {render(view: "testimonials.gsp")}
     
-    def events() {render(view: "events.gsp")}
+    def events() {forward(controller:"calendar", action: "show")}
 	
 	def contact() {render(view: "contact.gsp")}
     

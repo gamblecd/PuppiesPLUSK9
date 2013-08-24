@@ -96,6 +96,23 @@ environments {
     }
 }
 
+
+oauth {
+	providers {
+		google {
+			scope = 'https://www.googleapis.com/auth/calendar https://www.googleapis.com/auth/drive'
+			api = org.scribe.builder.api.GoogleApi;
+			key = System.getenv("gapps_key");
+			secret = System.getenv("gapps_secret");
+			callback = 'http://localhost:8080/PuppiesPLUSK9/oauth/google/callback';
+		}
+	}
+
+	debug = true
+
+}
+
+
 // log4j configuration
 log4j = {
     // Example of changing the log pattern for the default console appender:

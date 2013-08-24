@@ -1,17 +1,23 @@
-<%@ page contentType="text/html;charset=UTF-8" %>
+<%@ page contentType="text/html;charset=UTF-8"%>
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
-    <meta name="layout" content="headeredLayout"/>
-    <title>Error</title>
-    
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Error</title>
 </head>
-<body>
+<g:applyLayout name="headeredLayout">
 
-<g:applyLayout name="headeredLayout">  
 <content tag="pagetitle">Uh Oh!</content>
-   <h1>Error: ${ code }</h1>
-   <p>${ message }</p>
-</g:applyLayout>
+<body>
+	<h1>
+		Error:
+		${code}
+	</h1>
+	<p>
+		${message}
+	</p>
+	<p align="center">
+		<span style="font-size: 400px; line-height: 300px;">:(</span>
+	</p>
 </body>
+</g:applyLayout>
 </html>

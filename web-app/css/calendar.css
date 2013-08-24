@@ -1,0 +1,40 @@
+.calendarEvent {
+	background: #543;
+	border: solid;
+	border-width: 2px;
+	border-color:#baddab;
+    -moz-border-radius: 0.6em;
+    -webkit-border-radius:0.6em;
+    border-radius:0.6em;
+    text-align:center;
+    margin: .5em;
+}
+.calendarEvent p {
+	padding-bottom: .5em;
+}
+.calendarEvent .location {
+	padding: 5px;
+	padding-bottom: 7px;
+}
+
+.calendarEvent hr {
+	color: #baddab;
+	background-color: #baddab;
+	border-color: #baddab;
+}
+
+.calendar, .eventList {
+    margin:0px;
+    padding:0px;
+    display:inline-block;
+}
+
+.eventList{
+	float:left;
+	width:40%;
+}
+
+.calendar {
+    height:150%;
+    width:59%;
+}
