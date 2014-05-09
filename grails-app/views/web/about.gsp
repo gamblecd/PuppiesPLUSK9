@@ -8,8 +8,7 @@
 <g:set var="highlighted" value="navAbout" />
 <content tag="pagetitle">About Me</content>
 
-<body>
-	<div class="aboutme">
+<body><div class="aboutme">
 		<img src="${resource(dir: 'images/pages/about', file: 'about1.png')}"
 			alt="About Me" />
 		<p>I was born and raised in Snohomish County. I have had a
@@ -27,6 +26,5 @@
 			Obedience titles at an early age. Cricket, my first obedience dog,
 			also received her Rally Advanced Title at the age of 2. We continue
 			to show and have fun at the trials.</p>
-	</div>
-</body>
+	</div></body>
 </html>

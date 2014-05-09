@@ -10,22 +10,21 @@ class CalendarController {
 	def OauthService oauthService;	
 	
 	def show() {
-		def ProviderLoginService google = new ProviderLoginService(oauthService, 'google', this);
-		def sessionToken;
 		try {
-			sessionToken = loginWithProvider(google);
+			def ProviderLoginService google = new ProviderLoginService(oauthService, 'google', this);
+			def sessionToken = loginWithProvider(google);
 			if (sessionToken == null) {
 				return;
 			}
-		} catch (ServerException se) {
-			forward(controller:'error', action:'serveError', error:se);
-		}
-		String gCalListResource = 'https://www.googleapis.com/calendar/v3/calendars/primary/events?key='+grailsApplication.config.oauth.providers.google.key;
-		String gCalResource = 'https://www.googleapis.com/calendar/v3/users/me/calendar?key='+grailsApplication.config.oauth.providers.google.key;
-		def calendars = oauthService.getGoogleResource(sessionToken, gCalListResource);
-		def calendarsJSON = JSON.parse(calendars.body)
 		
-		render(view:"calendar.gsp", model:[events:calendarsJSON['items']]);
+			String gCalListResource = 'https://www.googleapis.com/calendar/v3/calendars/primary/events?key='+grailsApplication.config.oauth.providers.google.key;
+			String gCalResource = 'https://www.googleapis.com/calendar/v3/users/me/calendar?key='+grailsApplication.config.oauth.providers.google.key;
+			def calendars = oauthService.getGoogleResource(sessionToken, gCalListResource);
+			def calendarsJSON = JSON.parse(calendars.body)
+			render(view:"calendar.gsp", model:[events:calendarsJSON['items']]);
+		} catch (ServerException se) {
+			ErrorController.error(se);
+		}
 	}
 	
 	def loginWithProvider(ProviderLoginService provider) {

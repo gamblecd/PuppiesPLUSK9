@@ -1,18 +1,16 @@
 /* Page content Interior Div */
 .page_body {
-	min-height: 21em;
-	height: 100%;
-	display: inline-block;
-}
-
-.page_body p {
-	padding-bottom: 1em
+	display:inline-block;
+	vertical-align:top;
+	margin:1em;
 }
 
 .page_content {
-	width: 80%;
-	margin: 1em;
-	padding: 1em 0em 0em 0em;
+	width:80%;
+}
+
+.page_body p + p {
+	margin-top: 1em
 }
 
 .pageEmphasis {
@@ -20,6 +18,27 @@
 	margin: auto;
 	margin-top: 1em;
 	margin-bottom: 1em;
+}
+
+
+.right-border,
+.left-border {
+	border-style:solid;
+	border-width:0px;
+    border-color:#baddab;	
+}
+
+.left-border {
+    border-left-width:2px;
+}
+
+.right-border {
+    border-right-width:2px;
+	
+}
+
+.content-header {
+	padding-bottom: 1em;
 }
 
 .imgEmphasis {
@@ -57,9 +76,8 @@
 }
 
 /* WHAT I DO STYLE */
-.ido {
-	overflow: visible;
-	padding:1em;
+.ido + .ido {
+	margin-top: 2em;
 }
 
 .ido img {
@@ -85,19 +103,18 @@
 	position: relative;
 	vertical-align: middle;
 	height: 100%;
-	padding-top: 1.5em;
 }
 
 /* END WHAT I DO STYLE */
 
 /* ABOUT ME STYLE */
-.aboutme p {
-	display: block;
+.aboutme {
+	
 }
 
 #content .aboutme img {
+	float:left;
 	width: 200px;
-	float: left;
 	margin: 0 1em 1em 0;
 	padding: 0;
 }
@@ -145,52 +162,38 @@
 
 /* CONTACT INFORMATION STYLE */
 
-.contact {
-    height:150%;
-    margin:auto;
-}
-
 .contact p {margin-bottom:0;}
 
 .contact_info {
-	float:left;
+	vertical-align:top;
 	width:40%;
     display:inline-block;
-    
 }
 
 .contact_email_form {
-    float:right;
-    display:block;
-    height:150%;
-    width:59%;
-    
-    border-style:solid;
-    border-width:0 0 0 2px;
-    border-color:#baddab;
-    
+	width:55%;
+    display:inline-block;
 }
 
 .form_title {
     font-size: 32px;
     font-weight: bold;
-	
-	}
-
-.contact_email_form p {
-    width:100%;
 }
 
-.contact_email_form p textarea {
-    width:80%;
+.contact_email_form .input-item {
+    display:block;
 }
 
-.contact_email_form p label {
-	width: 4em;
-	float: left;
-	text-align: right;
-	margin-right: 0.5em;
-    }
+.contact_email_form .input-item + .input-item {
+    margin-top:1em;
+}
+
+.contact_email_form textarea {
+}
+
+.contact_email_form label {
+	width: 6em;
+}
 
 .contact_email_form .form_submit {
 	text-align:center;
