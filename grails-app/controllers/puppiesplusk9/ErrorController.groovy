@@ -10,9 +10,13 @@ class ErrorController {
 		render(controller:"error", view: "error.gsp", 
 			model:[code:errCode, message:errMessage]);
     }
+	def errorWithLayout(int errCode, String errMessage) {
+		render(controller:"error", view: "errorLayouted.gsp",
+			model:[code:errCode, message:errMessage]);
+	}
 	
 	def serveError(ServerException err) {
-		error(err.errorCode, err.serverMessage);
+		errorWithLayout(err.errorCode, err.serverMessage);
 	}
 	
     def pageNotFound() {

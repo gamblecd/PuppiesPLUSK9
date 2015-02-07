@@ -1,56 +1,50 @@
 .calendarEvent {
-	background: #543;
+	border-radius:0.2em;
+	-moz-border-radius: 0.2em;
+    -webkit-border-radius:0.2em;
+    
+    box-shadow:0 1px 2px #888;
+    
+    background: #321;
 	border: solid;
-	border-width: 2px;
+	border-width: 1px;
 	border-color:#baddab;
-    -moz-border-radius: 0.6em;
-    -webkit-border-radius:0.6em;
-    border-radius:0.6em;
-    margin: .5em;
+    text-align:left;
+    padding: .5em;
 }
+
+.calendarEvent + .calendarEvent {
+	margin-top:1em;
+}
+
 .calendarEvent p {
 	padding-bottom: .5em;
 }
-.calendarEvent .time, .calendarEvent .title {
-	padding:5px;
-    display:inline-block;
-    text-align:left;
-}
-.calendarEvent .time {
-    padding-right: 1.5em;
-}
-
-.calendarEvent .location,
-.calendarEvent .description {
-    text-align:center;
-}
-
 .calendarEvent .location {
-    padding: 5px;
-    padding-bottom: 7px;
+	padding: 5px;
+	padding-bottom: 7px;
 }
 
-.calendarEvent hr {
-	clear:both;
+.calendarEvent .cal-header {
+	background: #000;
+}
+
+.calendarEvent .cal-body {
 	color: #baddab;
-	background-color: #baddab;
-	border-color: #baddab;
 }
 
 .calendar, .eventList {
-    margin:0px;
-    padding:0px;
+    padding:0px 1em;
     display:inline-block;
 }
 
-.eventList{
-	margin-right:1em;
-	float:left;
-	width:40%;
+.eventList {
+	width:30%;
 }
 
 .calendar {
-	margin-left:1em;
+	display: inline-block;
+	vertical-align: top;
     height:150%;
-    width:56%;
+    width:60%;
 }

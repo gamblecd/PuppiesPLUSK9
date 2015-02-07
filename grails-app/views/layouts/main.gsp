@@ -21,10 +21,7 @@
 	</head>
 	<body>
 		<g:pageProperty name="page.header" />
-		<div id="content">
-			<g:pageProperty name="page.navigation" default=""/>
-			<g:pageProperty name="page.content" />
-		</div>
+		<div id="content"><g:pageProperty name="page.navigation" default=""/><g:pageProperty name="page.content" /></div>
 		<g:pageProperty name="page.footer" />
 		<g:javascript library="application"/>
 		<r:layoutResources />
