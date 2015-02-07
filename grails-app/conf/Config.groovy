@@ -102,9 +102,9 @@ oauth {
 		google {
 			scope = 'https://www.googleapis.com/auth/calendar https://www.googleapis.com/auth/drive'
 			api = org.scribe.builder.api.GoogleApi;
-			key = System.getenv("gapps_key");
+			key = 'puppiesplusk9.com';
 			secret = System.getenv("gapps_secret");
-			callback = 'http://localhost:8080/PuppiesPLUSK9/oauth/google/callback';
+			callback = 'http://127.0.0.1:8080/PuppiesPLUSK9/oauth/google/callback';
 		}
 	}
 

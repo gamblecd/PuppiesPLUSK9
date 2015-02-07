@@ -6,18 +6,32 @@
     -moz-border-radius: 0.6em;
     -webkit-border-radius:0.6em;
     border-radius:0.6em;
-    text-align:center;
     margin: .5em;
 }
 .calendarEvent p {
 	padding-bottom: .5em;
 }
+.calendarEvent .time, .calendarEvent .title {
+	padding:5px;
+    display:inline-block;
+    text-align:left;
+}
+.calendarEvent .time {
+    padding-right: 1.5em;
+}
+
+.calendarEvent .location,
+.calendarEvent .description {
+    text-align:center;
+}
+
 .calendarEvent .location {
-	padding: 5px;
-	padding-bottom: 7px;
+    padding: 5px;
+    padding-bottom: 7px;
 }
 
 .calendarEvent hr {
+	clear:both;
 	color: #baddab;
 	background-color: #baddab;
 	border-color: #baddab;
@@ -30,11 +44,13 @@
 }
 
 .eventList{
+	margin-right:1em;
 	float:left;
 	width:40%;
 }
 
 .calendar {
+	margin-left:1em;
     height:150%;
-    width:59%;
+    width:56%;
 }

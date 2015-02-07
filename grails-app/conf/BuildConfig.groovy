@@ -39,8 +39,9 @@ grails.project.dependency.resolution = {
 
         // runtime 'mysql:mysql-connector-java:5.1.200'
         runtime 'postgresql:postgresql:9.1-901-1.jdbc4'
-		compile 'com.google.api-client:google-api-client:1.15.0-rc'
-		
+        compile 'com.google.apis:google-api-services-calendar:v3-rev57-1.16.0-rc'
+		compile 'com.google.apis:google-api-services-oauth2:v2-rev47-1.16.0-rc'
+        compile 'com.google.api.client:google-api-client:1.4.1-beta'
     }
 
     plugins {
